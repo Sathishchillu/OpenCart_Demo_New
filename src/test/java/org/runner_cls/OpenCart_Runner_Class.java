@@ -29,13 +29,6 @@ public class OpenCart_Runner_Class {
 		
 	}
 	
-	
-	
-	
-	
-	
-	
-	
 	//@Given("get URL from opencart")
 	//public void get_url_from_opencart() {
 //		url(driver, "https://www.opencart.com/index.php?route=cms/feature");  
