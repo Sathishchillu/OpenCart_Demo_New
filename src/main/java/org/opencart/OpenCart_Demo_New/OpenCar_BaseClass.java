@@ -31,7 +31,7 @@ public class OpenCar_BaseClass {
 	
 	//scroll
 
-	public static void js(WebDriver driver, WebElement ele) {
+	public static void js_scroll(WebDriver driver, WebElement ele) {
 
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("arguments[0].scrollIntoView()", ele);
@@ -68,21 +68,21 @@ public class OpenCar_BaseClass {
 			}
 	//DropDown_value
 			
-			public static void DropDown_value(WebElement a, String b) {
+			public static void selectbyb_value(WebElement a, String b) {
 				Select s =new Select(a);
 				s.selectByValue(b);
 			}
 
 	//DropDown_Visible
 			
-			public static void DropDown_visibletxt(WebElement a, String b) {
+			public static void selectby_visibletxt(WebElement a, String b) {
 				Select s1= new Select(a);
 				s1.selectByVisibleText(b);	
 			}
 			
 	//DropDown_index
 			
-			public static void DropDown_index(WebElement a, int i) {
+			public static void selectby_index(WebElement a, int i) {
 				Select s2=new Select(a);
 				s2.selectByIndex(i);
 			}

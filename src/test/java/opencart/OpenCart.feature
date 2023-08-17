@@ -1,5 +1,5 @@
-@Tag1
-Feature: validate the opencart functionalities 
+Feature: validate the opencart functionalities
+  @Tag1
 Scenario: opencart check all pages
 Given get URL from opencart
 And maximize the window
@@ -73,4 +73,6 @@ When user click an Social Media
 And user click an Linkedin
 And user click an Facebook
 And user click an Twitter
-#
+
+  Then opencart page completed sucessfully
+

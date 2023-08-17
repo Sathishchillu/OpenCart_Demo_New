@@ -31,7 +31,7 @@ public void maximize_the_window() {
 @When("user click the Admin")
 public void user_click_the_admin() throws InterruptedException {
 	op.getAdmin().click();
-	js(driver, op.getScroll5());
+	js_scroll(driver, op.getScroll5());
 	Thread.sleep(1000);
 	
 }
@@ -39,13 +39,13 @@ public void user_click_the_admin() throws InterruptedException {
 public void user_click_the_unlimited_everything() {
 //	op.getUnlimitedEverything().click();
 	js_Click(driver,op.getUnlimitedEverything());
-	js(driver,op.getScrollup());
+	js_scroll(driver,op.getScrollup());
 }
 @When("user scroll down")
 public void user_scroll_down() throws InterruptedException {
 
 	Thread.sleep(1000);
-	js(driver, op.getScroll());
+	js_scroll(driver, op.getScroll());
 	Thread.sleep(1000);
 	
 }
@@ -53,9 +53,9 @@ public void user_scroll_down() throws InterruptedException {
 public void user_click_the_customer() throws InterruptedException {
 //	op.getCustomer().click();
 	js_Click(driver, op.getCustomer());
-	js(driver,op.getScrollup1());
+	js_scroll(driver,op.getScrollup1());
 	Thread.sleep(1000);
-	js(driver, op.getScroll1());
+	js_scroll(driver, op.getScroll1());
 	Thread.sleep(1000);
     
 }
@@ -64,9 +64,9 @@ public void user_click_the_customer() throws InterruptedException {
 @When("user click the Shipping")
 public void user_click_the_shipping() throws InterruptedException {
 	js_Click(driver, op.getShipping());
-	js(driver,op.getScrollup2());
+	js_scroll(driver,op.getScrollup2());
 	Thread.sleep(1000);
-	js(driver, op.getScroll2());
+	js_scroll(driver, op.getScroll2());
 	Thread.sleep(1000);	
 }
 
@@ -75,9 +75,9 @@ public void user_click_the_shipping() throws InterruptedException {
 public void user_click_the_extension() throws InterruptedException {
 //	op.getExtension().click();
 	js_Click(driver,op.getExtension());
-	js(driver,op.getScrollup3());
+	js_scroll(driver,op.getScrollup3());
 	Thread.sleep(1000);
-	js(driver, op.getScroll3());
+	js_scroll(driver, op.getScroll3());
 	Thread.sleep(1000); 
 }
 
@@ -86,9 +86,9 @@ public void user_click_the_extension() throws InterruptedException {
 public void user_click_the_mobile() throws InterruptedException {
 //	op.getMobile().click();
 	js_Click(driver,op.getMobile());
-	js(driver,op.getScrollup4());
+	js_scroll(driver,op.getScrollup4());
 	Thread.sleep(1000);
-	js(driver, op.getScroll4());
+	js_scroll(driver, op.getScroll4());
 	Thread.sleep(1000);
 }
 
@@ -97,12 +97,12 @@ public void user_click_the_mobile() throws InterruptedException {
 public void user_click_the_developer() throws InterruptedException {
 //	op.getDeveloper().click();
 	js_Click(driver, op.getDeveloper());
-	js(driver,op.getScrollup5());
+	js_scroll(driver,op.getScrollup5());
 	Thread.sleep(1000);
-	js(driver, op.getScroll5());
+	js_scroll(driver, op.getScroll5());
 	Thread.sleep(1000);
 	js_Click(driver, op.getAd());
-	js(driver,op.getScrollup6());
+	js_scroll(driver,op.getScrollup6());
 }
 
 
@@ -127,7 +127,7 @@ public void user_click_an_store_front() throws InterruptedException {
 	String parent0 = dom.next();
 	String child0 = dom.next();
 	driver.switchTo().window(child0);
-	js(driver, op.getScroll7());
+	js_scroll(driver, op.getScroll7());
 	Thread.sleep(1000);
 }
 
@@ -168,7 +168,7 @@ public void user_click_an_components() throws InterruptedException {
 	Thread.sleep(1000);
 	js_Click(driver, op.getMon());
 	Thread.sleep(1000);
-	js(driver, op.getScroll8());
+	js_scroll(driver, op.getScroll8());
 	Thread.sleep(1000);
 	js_Click(driver, op.getAddcart());
 	js_Click(driver, op.getHome());
@@ -183,7 +183,7 @@ public void user_click_an_tables() throws InterruptedException {
 	Thread.sleep(1000);
 	js_Click(driver, op.getSamsug());
 	Thread.sleep(1000);
-	js(driver, op.getScroll9());
+	js_scroll(driver, op.getScroll9());
 	Thread.sleep(1000);
 	js_Click(driver, op.getAddcart1());
 	js_Click(driver, op.getHome());
@@ -208,7 +208,7 @@ public void user_click_an_phones_and_pda() throws InterruptedException {
 	Thread.sleep(1000);
 	js_Click(driver, op.getMob());
 	Thread.sleep(1000);
-	js(driver, op.getScroll10());
+	js_scroll(driver, op.getScroll10());
 	Thread.sleep(1000); 
 	js_Click(driver, op.getAddcart2());
 	Thread.sleep(1000);
@@ -286,29 +286,29 @@ public void user_click_an_search() throws InterruptedException {
 	js_Click(driver, op.getSearchbutton());
 	
 // click by one and one
-	js(driver, op.getScroll11());
+	js_scroll(driver, op.getScroll11());
 	js_Click(driver, op.getAll());
-	js(driver, op.getScroll11());
+	js_scroll(driver, op.getScroll11());
 	js_Click(driver, op.getMarketplc());
-	js(driver, op.getScroll11());
+	js_scroll(driver, op.getScroll11());
 	js_Click(driver, op.getThemes());
-	js(driver, op.getScroll11());
+	js_scroll(driver, op.getScroll11());
 	js_Click(driver, op.getLanguagesnew());
-	js(driver, op.getScroll11());
+	js_scroll(driver, op.getScroll11());
 	js_Click(driver, op.getPaymentGateways());
-	js(driver, op.getScroll11());
+	js_scroll(driver, op.getScroll11());
 	js_Click(driver, op.getShippingMethods());
-	js(driver, op.getScroll11());
+	js_scroll(driver, op.getScroll11());
 	js_Click(driver, op.getModules());
-	js(driver, op.getScroll11());
+	js_scroll(driver, op.getScroll11());
 	js_Click(driver, op.getOrderTotals());
-	js(driver, op.getScroll11());
+	js_scroll(driver, op.getScroll11());
 	js_Click(driver, op.getProductFeeds());
-	js(driver, op.getScroll11());
+	js_scroll(driver, op.getScroll11());
 	js_Click(driver, op.getReports());
-	js(driver, op.getScroll11());
+	js_scroll(driver, op.getScroll11());
 	js_Click(driver, op.getOther());
-	js(driver, op.getScroll11());
+	js_scroll(driver, op.getScroll11());
 	js_Click(driver, op.getVQMod());
 	
 	}
@@ -317,17 +317,17 @@ public void user_click_an_search() throws InterruptedException {
 @When("user click an DropDownSortBy")
 public void user_click_an_drop_down_sort_by() throws InterruptedException {
 	
-	js(driver, op.getScroll12());
-	DropDown_visibletxt(op.getAllclick(), "4.0.2.0");
+	js_scroll(driver, op.getScroll12());
+	selectby_visibletxt(op.getAllclick(), "4.0.2.0");
 	js_Click(driver, op.getMarketplc());
 	Thread.sleep(2000);
-	js(driver, op.getScroll13());
+	js_scroll(driver, op.getScroll13());
 	Thread.sleep(2000);
 	js_Click(driver, op.getOpencartpartners());
-	js(driver, op.getScroll13());
+	js_scroll(driver, op.getScroll13());
 	Thread.sleep(2000);
 	js_Click(driver, op.getDevelopers());
-	DropDown_visibletxt(op.getRating(), "Rating");  
+	selectby_visibletxt(op.getRating(), "Rating");  
 }
 
 
@@ -347,9 +347,9 @@ public void user_click_an_articles() throws InterruptedException {
 	
 	js_Click(driver, op.getArticles());
 	Thread.sleep(1000);
-	js(driver, op.getScroll14());
+	js_scroll(driver, op.getScroll14());
 	Thread.sleep(1000);
-	js(driver, op.getScrollup7());
+	js_scroll(driver, op.getScrollup7());
 	Thread.sleep(1000);
 }
 
@@ -359,9 +359,9 @@ public void user_click_an_announcements() throws InterruptedException {
 	
 	js_Click(driver, op.getAnnouncements());
 	Thread.sleep(1000);
-	js(driver, op.getScroll14());
+	js_scroll(driver, op.getScroll14());
 	Thread.sleep(1000);
-	js(driver, op.getScrollup7());
+	js_scroll(driver, op.getScrollup7());
 	Thread.sleep(1000);
 }    
 
@@ -371,9 +371,9 @@ public void user_click_an_tips() throws InterruptedException {
 	
 	js_Click(driver, op.getTips());
 	Thread.sleep(1000);
-	js(driver, op.getScroll14());
+	js_scroll(driver, op.getScroll14());
 	Thread.sleep(1000);
-	js(driver, op.getScrollup7());
+	js_scroll(driver, op.getScrollup7());
 	Thread.sleep(1000);
  }   
 
@@ -383,9 +383,9 @@ public void user_click_an_success_stories() throws InterruptedException {
 	
 	js_Click(driver, op.getSuccessStories());
 	Thread.sleep(1000);
-	js(driver, op.getScroll14());
+	js_scroll(driver, op.getScroll14());
 	Thread.sleep(1000);
-	js(driver, op.getScrollup7());
+	js_scroll(driver, op.getScrollup7());
 	Thread.sleep(1000);
  }  
 
@@ -395,9 +395,9 @@ public void user_click_an_video_tutorials() throws InterruptedException {
 	
 	js_Click(driver, op.getVideoTutorials());
 	Thread.sleep(1000);
-	js(driver, op.getScroll14());
+	js_scroll(driver, op.getScroll14());
 	Thread.sleep(1000);
-	js(driver, op.getScrollup7());
+	js_scroll(driver, op.getScrollup7());
 	Thread.sleep(1000);
 }
 
@@ -412,9 +412,9 @@ public void user_click_an_download() {
 @When("user click Scroll Down and Scroll Up")
 public void user_click_scroll_down_and_scroll_up() throws InterruptedException {	
 	
-	js(driver, op.getScroll14());
+	js_scroll(driver, op.getScroll14());
 	Thread.sleep(1000);
-	js(driver, op.getScrollup7());
+	js_scroll(driver, op.getScrollup7());
 	
 }	
 
@@ -436,9 +436,9 @@ public void user_click_scroll_down_and_scroll_up() throws InterruptedException {
 		
 		js_Click(driver, op.getShowcase());									
 		Thread.sleep(1000);
-		js(driver, op.getScroll15());
+		js_scroll(driver, op.getScroll15());
 		Thread.sleep(1000);
-		js(driver, op.getScrollup8());
+		js_scroll(driver, op.getScrollup8());
 		Thread.sleep(1000);
 		js_Click(driver, op.getResources());								
 		Thread.sleep(1000);
@@ -450,9 +450,9 @@ public void user_click_scroll_down_and_scroll_up() throws InterruptedException {
 		
 		js_Click(driver, op.getContactUs());
 		Thread.sleep(1000);
-		js(driver, op.getScroll16());
+		js_scroll(driver, op.getScroll16());
 		Thread.sleep(1000);
-	    DropDown_visibletxt(op.getHelp(),"I have a partnership question");
+	    selectby_visibletxt(op.getHelp(),"I have a partnership question");
 		Thread.sleep(1000);
 		op.getName().sendKeys("chillu");
 		Thread.sleep(1000);
@@ -463,11 +463,11 @@ public void user_click_scroll_down_and_scroll_up() throws InterruptedException {
 //		op.getInput_website().sendKeys("asdfg");
 //		Thread.sleep(1000);
 //		op.getPhone_1().sendKeys("1234567890");
-//		DropDown_visibletxt(op.getDropdown_country(), "Angola");
+//		selectby_visibletxt(op.getDropdown_country(), "Angola");
 //		Thread.sleep(1000);
 		op.getMessage().sendKeys("how are you");
 		Thread.sleep(1000);
-		js(driver, op.getScrollup8());
+		js_scroll(driver, op.getScrollup8());
 	}
 	
 	
@@ -478,9 +478,9 @@ public void user_click_scroll_down_and_scroll_up() throws InterruptedException {
 		Thread.sleep(1000);
 		js_Click(driver, op.getOpenCart_Part());							
 		Thread.sleep(1000);
-		DropDown_visibletxt(op.getDropdown_control(), "India (14)");
+		selectby_visibletxt(op.getDropdown_control(), "India (14)");
 		Thread.sleep(1000);
-		js(driver, op.getScroll17());
+		js_scroll(driver, op.getScroll17());
 		Thread.sleep(1000);
 		js_Click(driver, op.getDevelopment_Partner());
 		Thread.sleep(1000);
@@ -494,7 +494,7 @@ public void user_click_scroll_down_and_scroll_up() throws InterruptedException {
 		Thread.sleep(1000);
 		js_Click(driver, op.getPartner());
 		Thread.sleep(1000);
-		js(driver, op.getScrollup8());
+		js_scroll(driver, op.getScrollup8());
 	}
 	
 	
@@ -505,36 +505,36 @@ public void user_click_scroll_down_and_scroll_up() throws InterruptedException {
 		Thread.sleep(1000);
 		js_Click(driver, op.getCommunity_Forums());
 		Thread.sleep(1000);
-		js(driver, op.getScroll18());
+		js_scroll(driver, op.getScroll18());
 		Thread.sleep(1000);
 		js_Click(driver, op.getUnanswered_topics());
 		Thread.sleep(1000);
-		js(driver, op.getScroll19());
+		js_scroll(driver, op.getScroll19());
 		Thread.sleep(1000);
-		DropDown_visibletxt(op.getDropdown_day(), "1 month");
+		selectby_visibletxt(op.getDropdown_day(), "1 month");
 		Thread.sleep(1000);
-		DropDown_visibletxt(op.getDropdown_topictitle(), "Topic title");
+		selectby_visibletxt(op.getDropdown_topictitle(), "Topic title");
 		Thread.sleep(1000);
-		DropDown_visibletxt(op.getDropdown_ascending(), "Ascending" );
+		selectby_visibletxt(op.getDropdown_ascending(), "Ascending" );
 		Thread.sleep(1000);
 		js_Click(driver, op.getGo());
 		Thread.sleep(5000);
 		driver.navigate().back();
-		js(driver, op.getScrollup8());
+		js_scroll(driver, op.getScrollup8());
 		Thread.sleep(1000);
 		driver.navigate().back();
 		js_Click(driver, op.getActive_topics());
 		Thread.sleep(1000);
-		js(driver, op.getScroll20());
+		js_scroll(driver, op.getScroll20());
 		Thread.sleep(1000);
-		DropDown_visibletxt(op.getDropdown_day(), "3 months");
+		selectby_visibletxt(op.getDropdown_day(), "3 months");
 		Thread.sleep(1000);
 		js_Click(driver, op.getGo());
 		Thread.sleep(1000);
 		driver.navigate().back();
 		Thread.sleep(1000);
 		driver.navigate().back();
-		js(driver, op.getScrollup8());
+		js_scroll(driver, op.getScrollup8());
 	}
 	
 	
@@ -555,9 +555,9 @@ public void user_click_scroll_down_and_scroll_up() throws InterruptedException {
 		Thread.sleep(1000);
 		js_Click(driver, op.getBrowsing_the_Store_Front());
 		Thread.sleep(1000);
-		js(driver, op.getScroll15());
+		js_scroll(driver, op.getScroll15());
 		Thread.sleep(1000);
-		js(driver, op.getScrollup9());
+		js_scroll(driver, op.getScrollup9());
 		js_Click(driver, op.getAdmin_Interface());
 		Thread.sleep(1000);
 		js_Click(driver, op.getAdmin_Interface());
@@ -570,37 +570,37 @@ public void user_click_scroll_down_and_scroll_up() throws InterruptedException {
 //		Thread.sleep(1000);
 //		js_Click(driver, op.getExtension());
 //		Thread.sleep(1000);
-		js(driver, op.getScroll21());
+		js_scroll(driver, op.getScroll21());
 		Thread.sleep(1000);
 		js_Click(driver, op.getSales());
 		Thread.sleep(1000);
 		js_Click(driver, op.getSales());
 		Thread.sleep(1000);
-		js(driver, op.getScroll21());
+		js_scroll(driver, op.getScroll21());
 		Thread.sleep(1000);
 		js_Click(driver, op.getMarketing1());
 		Thread.sleep(1000);
 		js_Click(driver, op.getMarketing1());
 		Thread.sleep(1000);
-		js(driver, op.getScroll21());
+		js_scroll(driver, op.getScroll21());
 		Thread.sleep(1000);
 		js_Click(driver, op.getSystem());
 		Thread.sleep(1000);
 		js_Click(driver, op.getSystem());
 		Thread.sleep(1000);
-		js(driver, op.getScroll21());
+		js_scroll(driver, op.getScroll21());
 		Thread.sleep(1000);
 		js_Click(driver, op.getTools());
 		Thread.sleep(1000);
 		js_Click(driver, op.getTools());
 		Thread.sleep(1000);
-		js(driver, op.getScroll21());
+		js_scroll(driver, op.getScroll21());
 		Thread.sleep(1000);
 		js_Click(driver, op.getReports_guide());
 		Thread.sleep(1000);
 		js_Click(driver, op.getReports_guide());
 		Thread.sleep(1000);
-		js(driver, op.getScroll21());
+		js_scroll(driver, op.getScroll21());
 		Thread.sleep(1000);
 		js_Click(driver, op.getDeveloper_Guide());
 		Thread.sleep(1000);
@@ -610,9 +610,9 @@ public void user_click_scroll_down_and_scroll_up() throws InterruptedException {
 		Thread.sleep(1000);
 		js_Click(driver, op.getVideo_Tutorial());
 		Thread.sleep(1000);
-		js(driver, op.getScroll22());
+		js_scroll(driver, op.getScroll22());
 		Thread.sleep(1000);
-		js(driver, op.getScrollup8());
+		js_scroll(driver, op.getScrollup8());
 	}
 	
 	
@@ -623,9 +623,9 @@ public void user_click_scroll_down_and_scroll_up() throws InterruptedException {
 		Thread.sleep(1000);
 		js_Click(driver, op.getOpenCart_Books1());
 		Thread.sleep(1000);
-		js(driver, op.getScroll15());
+		js_scroll(driver, op.getScroll15());
 		Thread.sleep(1000);
-		js(driver, op.getScrollup8());	
+		js_scroll(driver, op.getScrollup8());	
 	}
 	
 	
@@ -638,7 +638,7 @@ public void user_click_scroll_down_and_scroll_up() throws InterruptedException {
 		Thread.sleep(4000);
 		driver.navigate().back();
 		Thread.sleep(1000);
-		js(driver, op.getScrollup8());	
+		js_scroll(driver, op.getScrollup8());	
 	}
 	
 	
@@ -649,9 +649,9 @@ public void user_click_scroll_down_and_scroll_up() throws InterruptedException {
 		Thread.sleep(1000);
 		js_Click(driver, op.getDeveloper2());
 		Thread.sleep(1000);
-		js(driver, op.getScroll15());
+		js_scroll(driver, op.getScroll15());
 		Thread.sleep(1000);
-		js(driver, op.getScrollup8());
+		js_scroll(driver, op.getScrollup8());
 	
 	}
 
@@ -662,7 +662,7 @@ public void user_click_scroll_down_and_scroll_up() throws InterruptedException {
 		
 		js_Click(driver, op.getFeatures());
 		Thread.sleep(1000);
-		js(driver, op.getScroll15());
+		js_scroll(driver, op.getScroll15());
 		Thread.sleep(1000);
 	}
 	
@@ -706,6 +706,15 @@ public void user_click_scroll_down_and_scroll_up() throws InterruptedException {
 	driver.switchTo().window(child2);
 	 
 	}
+
+	@Then("opencart page completed sucessfully")
+	public void opencart_page_completed_sucessfully() {
+		System.out.println("OpenCart web application sucessfully completed");
+		
+	}
+
+
+
 
 
 

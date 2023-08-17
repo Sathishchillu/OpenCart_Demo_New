@@ -25,48 +25,11 @@ public class OpenCart_Runner_Class {
 		
 		ChromeOptions q = new ChromeOptions();
 	    q.addArguments("--remote-allow-origins=*");
-	    driver = new ChromeDriver();
+	    driver = new ChromeDriver(q);
 		
 	}
 	
-	//@Given("get URL from opencart")
-	//public void get_url_from_opencart() {
-//		url(driver, "https://www.opencart.com/index.php?route=cms/feature");  
-	//}
-	//@Given("maximize the window")
-	//public void maximize_the_window() {
-//		maxi(driver);
-	//}  
-	//@When("user click the Admin")
-	//public void user_click_the_admin() {
-	//   op.getAdmin().click();
-	//}
-	//@When("user click the UnlimitedEverything")
-	//public void user_click_the_unlimited_everything() {
-	//   op.getUnlimitedEverything().click();
-	//}
-	//@When("user click the Customer")
-	//public void user_click_the_customer() {
-//	    op.getCustomer().click();
-	//}
-	//@When("user click the Shoping")
-	//public void user_click_the_shoping() {
-//	    op.getShoping().click();
-	//}
-	//@When("user click the Extension")
-	//public void user_click_the_extension() {
-//	    op.getExtension().click();
-	//}
-	//@When("user click the Mobile")
-	//public void user_click_the_mobile() {
-//	    op.getMobile().click();
-	//}
-	//@When("user click the Developer")
-	//public void user_click_the_developer() {
-//	    op.getDeveloper().click();
-	//}
-	//jse.excuteScript("window.scrollBy(true)");
-	//jse.excuteScript("window.scrollBy(false)");
 
 
 }
+
