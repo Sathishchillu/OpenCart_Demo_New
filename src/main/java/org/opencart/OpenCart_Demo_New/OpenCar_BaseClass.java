@@ -2,6 +2,8 @@ package org.opencart.OpenCart_Demo_New;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
@@ -9,13 +11,11 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 public class OpenCar_BaseClass {
 
-	public WebDriver driver;
+	public static WebDriver driver;
 
 	public static void url(WebDriver driver, String s) {
 		driver.get(s);
@@ -31,31 +31,31 @@ public class OpenCar_BaseClass {
 	
 	//scroll
 
-	public static void js_scroll(WebDriver driver, WebElement ele) {
+	public static void js_scroll(WebDriver driver, WebElement element) {
 
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		jse.executeScript("arguments[0].scrollIntoView()", ele);
+		jse.executeScript("arguments[0].scrollIntoView()", element);
 	}
 
 	
-//	public static void move_to_element(WebDriver driver, WebElement ele) {
-//		Actions action = new Actions(driver);
+//	public static void move_to_element(WebDriver driver, WebElement element) {
+//		Actions element1ction = new element1ctions(driver);
 //		action.moveToElement(ele).build().perform();
 //		
 //	}
 	
-//	public static void action_click(WebDriver driver, WebElement ele) {
-//		Actions action = new Actions(driver);
+//	public static void element1ction_click(WebDriver driver, WebElement element) {
+//		Actions element1ction = new element1ctions(driver);
 //		action.click().build().perform();
 //		
 //	}
 	
 	//click
 	
-	public static void js_Click(WebDriver driver, WebElement ele1) {
+	public static void js_Click(WebDriver driver, WebElement element1) {
 
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		jse.executeScript("arguments[0].click()", ele1);
+		jse.executeScript("arguments[0].click()", element1);
 		
 	}
 	//screenshort
@@ -68,27 +68,37 @@ public class OpenCar_BaseClass {
 			}
 	//DropDown_value
 			
-			public static void selectbyb_value(WebElement a, String b) {
-				Select s =new Select(a);
-				s.selectByValue(b);
+			public static void selectby_value(WebElement element1, String value) {
+				Select s =new Select (element1);
+				s.selectByValue (value);
 			}
 
 	//DropDown_Visible
 			
-			public static void selectby_visibletxt(WebElement a, String b) {
-				Select s1= new Select(a);
-				s1.selectByVisibleText(b);	
+			public static void selectby_visibletxt(WebElement element1, String value) {
+				Select s1= new Select (element1);
+				s1.selectByVisibleText (value);	
 			}
 			
 	//DropDown_index
 			
-			public static void selectby_index(WebElement a, int i) {
-				Select s2=new Select(a);
-				s2.selectByIndex(i);
+			public static void selectby_index(WebElement element1, int index) {
+				Select s2=new Select (element1);
+				s2.selectByIndex(index);
 			}
 
-			
-	//close
+    // implecty wait
+
+//    public static void toHold(int second) {
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(second));
+//    }
+
+    public static void toHold( int seconds) {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));
+
+
+    }
+    //close
 			public static void close(WebDriver driver) {
 				driver.close();
 		
